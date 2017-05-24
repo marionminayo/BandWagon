@@ -1,5 +1,6 @@
 package com.example.android.bandwagon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,7 +15,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btnlogout;
-    EditText editusername, editname;
+    EditText editusername, editname, edithobby;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         editname = (EditText) findViewById(R.id.editname);
         editusername = (EditText) findViewById(R.id.editusername);
+        edithobby = (EditText) findViewById(R.id.edithobby);
         btnlogout = (Button) findViewById(R.id.btnlogout);
 
         btnlogout.setOnClickListener(this);
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnlogout:
+                startActivity(new Intent(this, login.class));
 
                 break;
         }
