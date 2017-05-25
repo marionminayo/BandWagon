@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/aw"
+        android:layout_alignTop="@+id/textView" />.
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="welcome to awesomeness!!!!!"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"/>
+
+</RelativeLayout>
